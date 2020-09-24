@@ -43,5 +43,5 @@ INSERT INTO `user` (`id`, `login_id`, `user_name`, `user_password`, `user_emil`,
 
 --liquibase formatted sql
 --changest tianjl:tianjingle-20191231-0
-INSERT INTO `scaffold`.`organization` (`id`, `name`, `content`) VALUES ('1', '研发一部', '研发一部');
-INSERT INTO `scaffold`.`organization` (`id`, `name`, `content`) VALUES ('2', '研发二部', '研发二部');
+INSERT INTO `organization` (`id`, `name`, `content`) VALUES ('1', '研发一部', '研发一部');
+INSERT INTO `organization` (`id`, `name`, `content`) VALUES ('2', '研发二部', '研发二部');

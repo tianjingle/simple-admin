@@ -36,9 +36,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
-        <jdbc.url>jdbc:mysql://192.168.105.190:3306/simpleadmin?useUnicode=true&amp;characterEncoding=utf8&amp;serverTimezone=UTC&amp;useSSL=false</jdbc.url>
-        <jdbc.username>LibSvr</jdbc.username>
-        <jdbc.password>P@$$W0rd</jdbc.password>
+        <jdbc.url>jdbc:mysql://localhost:3307/simpleadmin?useUnicode=true&amp;characterEncoding=utf8&amp;serverTimezone=UTC&amp;useSSL=false</jdbc.url>
+        <jdbc.username>root</jdbc.username>
+        <jdbc.password>tianjingle</jdbc.password>
         <jdbc.driverclassname>com.mysql.cj.jdbc.Driver</jdbc.driverclassname>
     </properties>
 
