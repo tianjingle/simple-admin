@@ -2,9 +2,7 @@ package com.scaffold.simple.admin.api.request.project;
 
 import lombok.Data;
 
-import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
-import java.util.Date;
 
 /**
  * @Author: tianjl

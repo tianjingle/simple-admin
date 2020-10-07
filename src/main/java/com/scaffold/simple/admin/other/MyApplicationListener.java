@@ -1,7 +1,10 @@
 package com.scaffold.simple.admin.other;
 
+import lombok.Data;
+import org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor;
 import org.springframework.context.ApplicationEvent;
 import org.springframework.context.ApplicationListener;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 /**
@@ -12,6 +15,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class MyApplicationListener implements ApplicationListener {
 
+//    AutowiredAnnotationBeanPostProcessor
     /***
      * 监听事件
      * @param event
@@ -24,4 +28,5 @@ public class MyApplicationListener implements ApplicationListener {
             System.out.println(event.toString());
         }
     }
+
 }

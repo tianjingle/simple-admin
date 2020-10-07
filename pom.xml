@@ -197,6 +197,7 @@
                     <!--suppress UnresolvedMavenProperty -->
                     <include>application-${profileActive}.properties</include>
                     <include>application.properties</include>
+                    <include>application-tianjl.properties</include>
                 </includes>
             </resource>
         </resources>
