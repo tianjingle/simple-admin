@@ -2,6 +2,9 @@ package com.scaffold.simple.admin;
 
 import com.scaffold.simple.admin.other.*;
 import com.scaffold.simple.admin.utils.MyMapper;
+import com.scaffold.simple.san.EnableMyselect;
+import com.scaffold.simple.san.Myselect;
+import com.scaffold.simple.san.Myselector;
 import com.scaffold.simple.san.TianTest;
 import org.springframework.beans.BeansException;
 import org.springframework.boot.SpringApplication;
@@ -21,6 +24,7 @@ import tk.mybatis.spring.annotation.MapperScan;
  * @Date: 2020/9/1 9:53
  * @Eamil: 2695062879@qq.com
  */
+@EnableMyselect
 @SpringBootApplication
 @MapperScan(basePackages = "com.scaffold.simple.admin.infrestraction.db",markerInterface = MyMapper.class)
 public class SimpleAdminService extends SpringBootServletInitializer implements ApplicationContextAware, EnvironmentAware {
@@ -42,6 +46,7 @@ public class SimpleAdminService extends SpringBootServletInitializer implements 
         System.out.println(environment.toString());
         System.out.println(context.getBean(TianTest.class));
         System.out.println(environment.getProperty("tianjingle"));
+        System.out.println("selector测试："+context.getBean(Myselect.class).toString());
     }
 
 
