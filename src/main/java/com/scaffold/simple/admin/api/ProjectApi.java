@@ -49,6 +49,7 @@ public class ProjectApi {
      */
     @GetMapping(value = "/test")
     public ResponseResult test(){
+        projectManagerService.test();
         return ResponseResult.success(true);
     }
 }

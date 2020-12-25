@@ -1,90 +1,122 @@
-[2020-12-20 12:48:51.348] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.scaffold.simple.admin.SimpleAdminService:]) Starting SimpleAdminService on DESKTOP-1TO8S67 with PID 1088 (D:\github\simpleadmin\target\classes started by Administrator in D:\github\simpleadmin) 
-[2020-12-20 12:48:51.378] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.scaffold.simple.admin.SimpleAdminService:]) No active profile set, falling back to default profiles: default 
-[2020-12-20 12:48:53.585] [DESKTOP-1TO8S67 simpleAdmin] [WARN ] [main]([org.mybatis.spring.mapper.ClassPathMapperScanner:]) No MyBatis mapper was found in '[com.scaffold.simple.admin]' package. Please check your configuration. 
-[2020-12-20 12:48:53.720] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.springframework.context.annotation.ConfigurationClassPostProcessor:]) Cannot enhance @Configuration bean definition 'myAppTest1' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'. 
-[2020-12-20 12:48:59.854] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:]) Init DruidDataSource 
-[2020-12-20 12:49:00.636] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.alibaba.druid.pool.DruidDataSource:]) {dataSource-1} inited 
-[2020-12-20 12:49:02.167] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.executor.jvm.JdbcExecutor:]) SELECT COUNT(*) FROM simpleadmin.DATABASECHANGELOGLOCK 
-[2020-12-20 12:49:02.488] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.executor.jvm.JdbcExecutor:]) SELECT COUNT(*) FROM simpleadmin.DATABASECHANGELOGLOCK 
-[2020-12-20 12:49:02.496] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.executor.jvm.JdbcExecutor:]) SELECT `LOCKED` FROM simpleadmin.DATABASECHANGELOGLOCK WHERE ID=1 
-[2020-12-20 12:49:02.764] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.lockservice.StandardLockService:]) Successfully acquired change log lock 
-[2020-12-20 12:49:03.590] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.executor.jvm.JdbcExecutor:]) SELECT MD5SUM FROM simpleadmin.DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1 
-[2020-12-20 12:49:03.629] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.executor.jvm.JdbcExecutor:]) SELECT COUNT(*) FROM simpleadmin.DATABASECHANGELOG 
-[2020-12-20 12:49:03.633] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.changelog.StandardChangeLogHistoryService:]) Reading from simpleadmin.DATABASECHANGELOG 
-[2020-12-20 12:49:03.633] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.executor.jvm.JdbcExecutor:]) SELECT * FROM simpleadmin.DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC 
-[2020-12-20 12:49:03.704] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.lockservice.StandardLockService:]) Successfully released change log lock 
-[2020-12-20 12:49:04.474] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.scaffold.simple.admin.SimpleAdminService:]) Started SimpleAdminService in 14.578 seconds (JVM running for 19.395) 
-[2020-12-20 12:49:04.483] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [Thread-8]([com.alibaba.druid.pool.DruidDataSource:]) {dataSource-1} closing ... 
-[2020-12-20 12:49:04.488] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [Thread-8]([com.alibaba.druid.pool.DruidDataSource:]) {dataSource-1} closed 
-[2020-12-20 12:50:07.902] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.scaffold.simple.admin.SimpleAdminService:]) Starting SimpleAdminService on DESKTOP-1TO8S67 with PID 8784 (D:\github\simpleadmin\target\classes started by Administrator in D:\github\simpleadmin) 
-[2020-12-20 12:50:07.909] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.scaffold.simple.admin.SimpleAdminService:]) No active profile set, falling back to default profiles: default 
-[2020-12-20 12:50:08.640] [DESKTOP-1TO8S67 simpleAdmin] [WARN ] [main]([org.mybatis.spring.mapper.ClassPathMapperScanner:]) No MyBatis mapper was found in '[com.scaffold.simple.admin]' package. Please check your configuration. 
-[2020-12-20 12:50:08.740] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.springframework.context.annotation.ConfigurationClassPostProcessor:]) Cannot enhance @Configuration bean definition 'myAppTest1' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'. 
-[2020-12-20 12:50:09.088] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:]) Init DruidDataSource 
-[2020-12-20 12:50:09.417] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.alibaba.druid.pool.DruidDataSource:]) {dataSource-1} inited 
-[2020-12-20 12:50:10.750] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.executor.jvm.JdbcExecutor:]) SELECT COUNT(*) FROM simpleadmin.DATABASECHANGELOGLOCK 
-[2020-12-20 12:50:10.756] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.executor.jvm.JdbcExecutor:]) SELECT COUNT(*) FROM simpleadmin.DATABASECHANGELOGLOCK 
-[2020-12-20 12:50:10.759] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.executor.jvm.JdbcExecutor:]) SELECT `LOCKED` FROM simpleadmin.DATABASECHANGELOGLOCK WHERE ID=1 
-[2020-12-20 12:50:10.856] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.lockservice.StandardLockService:]) Successfully acquired change log lock 
-[2020-12-20 12:50:11.576] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.executor.jvm.JdbcExecutor:]) SELECT MD5SUM FROM simpleadmin.DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1 
-[2020-12-20 12:50:11.578] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.executor.jvm.JdbcExecutor:]) SELECT COUNT(*) FROM simpleadmin.DATABASECHANGELOG 
-[2020-12-20 12:50:11.579] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.changelog.StandardChangeLogHistoryService:]) Reading from simpleadmin.DATABASECHANGELOG 
-[2020-12-20 12:50:11.580] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.executor.jvm.JdbcExecutor:]) SELECT * FROM simpleadmin.DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC 
-[2020-12-20 12:50:11.634] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.lockservice.StandardLockService:]) Successfully released change log lock 
-[2020-12-20 12:50:12.105] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.scaffold.simple.admin.SimpleAdminService:]) Started SimpleAdminService in 5.413 seconds (JVM running for 7.912) 
-[2020-12-20 12:50:12.119] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [Thread-5]([com.alibaba.druid.pool.DruidDataSource:]) {dataSource-1} closing ... 
-[2020-12-20 12:50:12.126] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [Thread-5]([com.alibaba.druid.pool.DruidDataSource:]) {dataSource-1} closed 
-[2020-12-20 15:03:04.687] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.scaffold.simple.admin.SimpleAdminService:]) Starting SimpleAdminService on DESKTOP-1TO8S67 with PID 7804 (D:\github\simpleadmin\target\classes started by Administrator in D:\github\simpleadmin) 
-[2020-12-20 15:03:04.704] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.scaffold.simple.admin.SimpleAdminService:]) No active profile set, falling back to default profiles: default 
-[2020-12-20 15:03:06.095] [DESKTOP-1TO8S67 simpleAdmin] [WARN ] [main]([org.mybatis.spring.mapper.ClassPathMapperScanner:]) No MyBatis mapper was found in '[com.scaffold.simple.admin]' package. Please check your configuration. 
-[2020-12-20 15:03:06.222] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.springframework.context.annotation.ConfigurationClassPostProcessor:]) Cannot enhance @Configuration bean definition 'myAppTest1' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'. 
-[2020-12-20 15:03:06.580] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:]) Init DruidDataSource 
-[2020-12-20 15:03:07.128] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.alibaba.druid.pool.DruidDataSource:]) {dataSource-1} inited 
-[2020-12-20 15:03:08.591] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.executor.jvm.JdbcExecutor:]) SELECT COUNT(*) FROM simpleadmin.DATABASECHANGELOGLOCK 
-[2020-12-20 15:03:08.645] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.executor.jvm.JdbcExecutor:]) SELECT COUNT(*) FROM simpleadmin.DATABASECHANGELOGLOCK 
-[2020-12-20 15:03:08.663] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.executor.jvm.JdbcExecutor:]) SELECT `LOCKED` FROM simpleadmin.DATABASECHANGELOGLOCK WHERE ID=1 
-[2020-12-20 15:03:08.800] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.lockservice.StandardLockService:]) Successfully acquired change log lock 
-[2020-12-20 15:03:09.639] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.executor.jvm.JdbcExecutor:]) SELECT MD5SUM FROM simpleadmin.DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1 
-[2020-12-20 15:03:09.641] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.executor.jvm.JdbcExecutor:]) SELECT COUNT(*) FROM simpleadmin.DATABASECHANGELOG 
-[2020-12-20 15:03:09.645] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.changelog.StandardChangeLogHistoryService:]) Reading from simpleadmin.DATABASECHANGELOG 
-[2020-12-20 15:03:09.645] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.executor.jvm.JdbcExecutor:]) SELECT * FROM simpleadmin.DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC 
-[2020-12-20 15:03:09.702] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.lockservice.StandardLockService:]) Successfully released change log lock 
-[2020-12-20 15:03:10.354] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.scaffold.simple.admin.SimpleAdminService:]) Started SimpleAdminService in 7.442 seconds (JVM running for 10.005) 
-[2020-12-20 15:03:10.365] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [Thread-2]([com.alibaba.druid.pool.DruidDataSource:]) {dataSource-1} closing ... 
-[2020-12-20 15:03:10.370] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [Thread-2]([com.alibaba.druid.pool.DruidDataSource:]) {dataSource-1} closed 
-[2020-12-20 15:37:15.739] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.scaffold.simple.admin.SimpleAdminService:]) Starting SimpleAdminService on DESKTOP-1TO8S67 with PID 19096 (D:\github\simpleadmin\target\classes started by Administrator in D:\github\simpleadmin) 
-[2020-12-20 15:37:15.802] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.scaffold.simple.admin.SimpleAdminService:]) No active profile set, falling back to default profiles: default 
-[2020-12-20 15:40:45.685] [DESKTOP-1TO8S67 simpleAdmin] [WARN ] [main]([org.mybatis.spring.mapper.ClassPathMapperScanner:]) No MyBatis mapper was found in '[com.scaffold.simple.admin]' package. Please check your configuration. 
-[2020-12-20 15:40:46.137] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.springframework.context.annotation.ConfigurationClassPostProcessor:]) Cannot enhance @Configuration bean definition 'myAppTest1' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'. 
-[2020-12-20 15:40:59.077] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:]) Init DruidDataSource 
-[2020-12-20 15:41:00.865] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.alibaba.druid.pool.DruidDataSource:]) {dataSource-1} inited 
-[2020-12-20 15:41:09.212] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.executor.jvm.JdbcExecutor:]) SELECT COUNT(*) FROM simpleadmin.DATABASECHANGELOGLOCK 
-[2020-12-20 15:41:09.248] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.executor.jvm.JdbcExecutor:]) SELECT COUNT(*) FROM simpleadmin.DATABASECHANGELOGLOCK 
-[2020-12-20 15:41:09.270] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.executor.jvm.JdbcExecutor:]) SELECT `LOCKED` FROM simpleadmin.DATABASECHANGELOGLOCK WHERE ID=1 
-[2020-12-20 15:41:09.633] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.lockservice.StandardLockService:]) Successfully acquired change log lock 
-[2020-12-20 15:41:13.456] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.executor.jvm.JdbcExecutor:]) SELECT MD5SUM FROM simpleadmin.DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1 
-[2020-12-20 15:41:13.463] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.executor.jvm.JdbcExecutor:]) SELECT COUNT(*) FROM simpleadmin.DATABASECHANGELOG 
-[2020-12-20 15:41:13.465] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.changelog.StandardChangeLogHistoryService:]) Reading from simpleadmin.DATABASECHANGELOG 
-[2020-12-20 15:41:13.466] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.executor.jvm.JdbcExecutor:]) SELECT * FROM simpleadmin.DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC 
-[2020-12-20 15:41:13.649] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.lockservice.StandardLockService:]) Successfully released change log lock 
-[2020-12-20 15:41:22.988] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.scaffold.simple.admin.SimpleAdminService:]) Started SimpleAdminService in 259.017 seconds (JVM running for 262.786) 
-[2020-12-20 15:41:31.256] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [Thread-109]([com.alibaba.druid.pool.DruidDataSource:]) {dataSource-1} closing ... 
-[2020-12-20 15:41:31.292] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [Thread-109]([com.alibaba.druid.pool.DruidDataSource:]) {dataSource-1} closed 
-[2020-12-20 15:43:44.946] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.scaffold.simple.admin.SimpleAdminService:]) Starting SimpleAdminService on DESKTOP-1TO8S67 with PID 15124 (D:\github\simpleadmin\target\classes started by Administrator in D:\github\simpleadmin) 
-[2020-12-20 15:43:45.028] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.scaffold.simple.admin.SimpleAdminService:]) No active profile set, falling back to default profiles: default 
-[2020-12-20 15:49:59.155] [DESKTOP-1TO8S67 simpleAdmin] [WARN ] [main]([org.mybatis.spring.mapper.ClassPathMapperScanner:]) No MyBatis mapper was found in '[com.scaffold.simple.admin]' package. Please check your configuration. 
-[2020-12-20 15:49:59.262] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.springframework.context.annotation.ConfigurationClassPostProcessor:]) Cannot enhance @Configuration bean definition 'myAppTest1' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'. 
-[2020-12-20 15:50:05.124] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:]) Init DruidDataSource 
-[2020-12-20 15:50:05.445] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.alibaba.druid.pool.DruidDataSource:]) {dataSource-1} inited 
-[2020-12-20 15:50:06.719] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.executor.jvm.JdbcExecutor:]) SELECT COUNT(*) FROM simpleadmin.DATABASECHANGELOGLOCK 
-[2020-12-20 15:50:06.728] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.executor.jvm.JdbcExecutor:]) SELECT COUNT(*) FROM simpleadmin.DATABASECHANGELOGLOCK 
-[2020-12-20 15:50:06.734] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.executor.jvm.JdbcExecutor:]) SELECT `LOCKED` FROM simpleadmin.DATABASECHANGELOGLOCK WHERE ID=1 
-[2020-12-20 15:50:06.854] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.lockservice.StandardLockService:]) Successfully acquired change log lock 
-[2020-12-20 15:50:07.518] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.executor.jvm.JdbcExecutor:]) SELECT MD5SUM FROM simpleadmin.DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1 
-[2020-12-20 15:50:07.528] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.executor.jvm.JdbcExecutor:]) SELECT COUNT(*) FROM simpleadmin.DATABASECHANGELOG 
-[2020-12-20 15:50:07.540] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.changelog.StandardChangeLogHistoryService:]) Reading from simpleadmin.DATABASECHANGELOG 
-[2020-12-20 15:50:07.540] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.executor.jvm.JdbcExecutor:]) SELECT * FROM simpleadmin.DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC 
-[2020-12-20 15:50:07.604] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.lockservice.StandardLockService:]) Successfully released change log lock 
-[2020-12-20 15:50:08.070] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.scaffold.simple.admin.SimpleAdminService:]) Started SimpleAdminService in 392.373 seconds (JVM running for 395.734) 
-[2020-12-20 15:50:08.079] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [Thread-40]([com.alibaba.druid.pool.DruidDataSource:]) {dataSource-1} closing ... 
-[2020-12-20 15:50:08.085] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [Thread-40]([com.alibaba.druid.pool.DruidDataSource:]) {dataSource-1} closed 
+[2020-12-25 08:06:57.799] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [Thread-20]([org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:]) Shutting down ExecutorService 'applicationTaskExecutor' 
+[2020-12-25 08:06:57.832] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [Thread-20]([com.alibaba.druid.pool.DruidDataSource:]) {dataSource-1} closing ... 
+[2020-12-25 08:06:57.924] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [Thread-20]([com.alibaba.druid.pool.DruidDataSource:]) {dataSource-1} closed 
+[2020-12-25 08:07:21.274] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.scaffold.simple.admin.SimpleAdminService:]) Starting SimpleAdminService on DESKTOP-1TO8S67 with PID 13720 (D:\github\simpleadmin\target\classes started by Administrator in D:\github\simpleadmin) 
+[2020-12-25 08:07:21.312] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.scaffold.simple.admin.SimpleAdminService:]) No active profile set, falling back to default profiles: default 
+[2020-12-25 08:07:23.661] [DESKTOP-1TO8S67 simpleAdmin] [WARN ] [main]([org.mybatis.spring.mapper.ClassPathMapperScanner:]) No MyBatis mapper was found in '[com.scaffold.simple.admin]' package. Please check your configuration. 
+[2020-12-25 08:07:23.842] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.springframework.context.annotation.ConfigurationClassPostProcessor:]) Cannot enhance @Configuration bean definition 'myAppTest1' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'. 
+[2020-12-25 08:07:24.242] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:]) Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b501b1de] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+[2020-12-25 08:07:25.007] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.springframework.boot.web.embedded.tomcat.TomcatWebServer:]) Tomcat initialized with port(s): 8083 (http) 
+[2020-12-25 08:07:25.041] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.apache.coyote.http11.Http11NioProtocol:]) Initializing ProtocolHandler ["http-nio-8083"] 
+[2020-12-25 08:07:25.054] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.apache.catalina.core.StandardService:]) Starting service [Tomcat] 
+[2020-12-25 08:07:25.054] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.apache.catalina.core.StandardEngine:]) Starting Servlet engine: [Apache Tomcat/9.0.19] 
+[2020-12-25 08:07:25.526] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/simpleAdmin]:]) Initializing Spring embedded WebApplicationContext 
+[2020-12-25 08:07:25.526] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.springframework.web.context.ContextLoader:]) Root WebApplicationContext: initialization completed in 4024 ms 
+[2020-12-25 08:07:25.993] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:]) Init DruidDataSource 
+[2020-12-25 08:07:26.692] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.alibaba.druid.pool.DruidDataSource:]) {dataSource-1} inited 
+[2020-12-25 08:07:27.731] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.integration.spring.SpringLiquibase:]) Liquibase did not run because 'shouldRun' property was set to false on liquibase Liquibase Spring bean. 
+[2020-12-25 08:07:27.760] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping:]) Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)] 
+[2020-12-25 08:07:28.135] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:]) Initializing ExecutorService 'applicationTaskExecutor' 
+[2020-12-25 08:07:28.551] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping:]) Adding welcome page template: index 
+[2020-12-25 08:07:28.876] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper:]) Context refreshed 
+[2020-12-25 08:07:28.949] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper:]) Found 1 custom documentation plugin(s) 
+[2020-12-25 08:07:29.080] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([springfox.documentation.spring.web.scanners.ApiListingReferenceScanner:]) Scanning for api listing references 
+[2020-12-25 08:07:29.572] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.apache.coyote.http11.Http11NioProtocol:]) Starting ProtocolHandler ["http-nio-8083"] 
+[2020-12-25 08:07:29.712] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.springframework.boot.web.embedded.tomcat.TomcatWebServer:]) Tomcat started on port(s): 8083 (http) with context path '/simpleAdmin' 
+[2020-12-25 08:07:29.717] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.scaffold.simple.admin.SimpleAdminService:]) Started SimpleAdminService in 10.62 seconds (JVM running for 14.885) 
+[2020-12-25 08:07:36.633] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [http-nio-8083-exec-1]([org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/simpleAdmin]:]) Initializing Spring DispatcherServlet 'dispatcherServlet' 
+[2020-12-25 08:07:36.633] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [http-nio-8083-exec-1]([org.springframework.web.servlet.DispatcherServlet:]) Initializing Servlet 'dispatcherServlet' 
+[2020-12-25 08:07:36.644] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [http-nio-8083-exec-1]([org.springframework.web.servlet.DispatcherServlet:]) Completed initialization in 11 ms 
+[2020-12-25 08:08:30.589] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [Thread-3]([org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:]) Shutting down ExecutorService 'applicationTaskExecutor' 
+[2020-12-25 08:08:30.592] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [Thread-3]([com.alibaba.druid.pool.DruidDataSource:]) {dataSource-1} closing ... 
+[2020-12-25 08:08:30.597] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [Thread-3]([com.alibaba.druid.pool.DruidDataSource:]) {dataSource-1} closed 
+[2020-12-25 08:08:40.107] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.scaffold.simple.admin.SimpleAdminService:]) Starting SimpleAdminService on DESKTOP-1TO8S67 with PID 12808 (D:\github\simpleadmin\target\classes started by Administrator in D:\github\simpleadmin) 
+[2020-12-25 08:08:40.117] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.scaffold.simple.admin.SimpleAdminService:]) No active profile set, falling back to default profiles: default 
+[2020-12-25 08:08:41.810] [DESKTOP-1TO8S67 simpleAdmin] [WARN ] [main]([org.mybatis.spring.mapper.ClassPathMapperScanner:]) No MyBatis mapper was found in '[com.scaffold.simple.admin]' package. Please check your configuration. 
+[2020-12-25 08:08:41.979] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.springframework.context.annotation.ConfigurationClassPostProcessor:]) Cannot enhance @Configuration bean definition 'myAppTest1' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'. 
+[2020-12-25 08:08:42.469] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:]) Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fdf08df5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+[2020-12-25 08:08:43.310] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.springframework.boot.web.embedded.tomcat.TomcatWebServer:]) Tomcat initialized with port(s): 8083 (http) 
+[2020-12-25 08:08:43.350] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.apache.coyote.http11.Http11NioProtocol:]) Initializing ProtocolHandler ["http-nio-8083"] 
+[2020-12-25 08:08:43.378] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.apache.catalina.core.StandardService:]) Starting service [Tomcat] 
+[2020-12-25 08:08:43.380] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.apache.catalina.core.StandardEngine:]) Starting Servlet engine: [Apache Tomcat/9.0.19] 
+[2020-12-25 08:08:43.759] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/simpleAdmin]:]) Initializing Spring embedded WebApplicationContext 
+[2020-12-25 08:08:43.759] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.springframework.web.context.ContextLoader:]) Root WebApplicationContext: initialization completed in 3561 ms 
+[2020-12-25 08:08:44.207] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:]) Init DruidDataSource 
+[2020-12-25 08:08:44.635] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.alibaba.druid.pool.DruidDataSource:]) {dataSource-1} inited 
+[2020-12-25 08:08:45.479] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.integration.spring.SpringLiquibase:]) Liquibase did not run because 'shouldRun' property was set to false on liquibase Liquibase Spring bean. 
+[2020-12-25 08:08:45.502] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping:]) Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)] 
+[2020-12-25 08:08:45.865] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:]) Initializing ExecutorService 'applicationTaskExecutor' 
+[2020-12-25 08:08:46.199] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping:]) Adding welcome page template: index 
+[2020-12-25 08:08:46.375] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper:]) Context refreshed 
+[2020-12-25 08:08:46.419] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper:]) Found 1 custom documentation plugin(s) 
+[2020-12-25 08:08:46.475] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([springfox.documentation.spring.web.scanners.ApiListingReferenceScanner:]) Scanning for api listing references 
+[2020-12-25 08:08:46.716] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.apache.coyote.http11.Http11NioProtocol:]) Starting ProtocolHandler ["http-nio-8083"] 
+[2020-12-25 08:08:46.817] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.springframework.boot.web.embedded.tomcat.TomcatWebServer:]) Tomcat started on port(s): 8083 (http) with context path '/simpleAdmin' 
+[2020-12-25 08:08:46.824] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.scaffold.simple.admin.SimpleAdminService:]) Started SimpleAdminService in 9.894 seconds (JVM running for 12.566) 
+[2020-12-25 08:09:42.706] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [http-nio-8083-exec-2]([org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/simpleAdmin]:]) Initializing Spring DispatcherServlet 'dispatcherServlet' 
+[2020-12-25 08:09:42.706] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [http-nio-8083-exec-2]([org.springframework.web.servlet.DispatcherServlet:]) Initializing Servlet 'dispatcherServlet' 
+[2020-12-25 08:09:42.716] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [http-nio-8083-exec-2]([org.springframework.web.servlet.DispatcherServlet:]) Completed initialization in 10 ms 
+[2020-12-25 08:12:20.397] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [Thread-3]([org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:]) Shutting down ExecutorService 'applicationTaskExecutor' 
+[2020-12-25 08:12:20.399] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [Thread-3]([com.alibaba.druid.pool.DruidDataSource:]) {dataSource-1} closing ... 
+[2020-12-25 08:12:20.405] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [Thread-3]([com.alibaba.druid.pool.DruidDataSource:]) {dataSource-1} closed 
+[2020-12-25 08:12:36.624] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.scaffold.simple.admin.SimpleAdminService:]) Starting SimpleAdminService on DESKTOP-1TO8S67 with PID 8036 (D:\github\simpleadmin\target\classes started by Administrator in D:\github\simpleadmin) 
+[2020-12-25 08:12:36.634] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.scaffold.simple.admin.SimpleAdminService:]) No active profile set, falling back to default profiles: default 
+[2020-12-25 08:12:38.039] [DESKTOP-1TO8S67 simpleAdmin] [WARN ] [main]([org.mybatis.spring.mapper.ClassPathMapperScanner:]) No MyBatis mapper was found in '[com.scaffold.simple.admin]' package. Please check your configuration. 
+[2020-12-25 08:12:38.164] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.springframework.context.annotation.ConfigurationClassPostProcessor:]) Cannot enhance @Configuration bean definition 'myAppTest1' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'. 
+[2020-12-25 08:12:38.444] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:]) Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ba63f56d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+[2020-12-25 08:12:38.844] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.springframework.boot.web.embedded.tomcat.TomcatWebServer:]) Tomcat initialized with port(s): 8083 (http) 
+[2020-12-25 08:12:38.862] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.apache.coyote.http11.Http11NioProtocol:]) Initializing ProtocolHandler ["http-nio-8083"] 
+[2020-12-25 08:12:38.872] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.apache.catalina.core.StandardService:]) Starting service [Tomcat] 
+[2020-12-25 08:12:38.873] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.apache.catalina.core.StandardEngine:]) Starting Servlet engine: [Apache Tomcat/9.0.19] 
+[2020-12-25 08:12:39.235] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/simpleAdmin]:]) Initializing Spring embedded WebApplicationContext 
+[2020-12-25 08:12:39.235] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.springframework.web.context.ContextLoader:]) Root WebApplicationContext: initialization completed in 2514 ms 
+[2020-12-25 08:12:39.443] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:]) Init DruidDataSource 
+[2020-12-25 08:12:39.758] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.alibaba.druid.pool.DruidDataSource:]) {dataSource-1} inited 
+[2020-12-25 08:12:40.376] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([liquibase.integration.spring.SpringLiquibase:]) Liquibase did not run because 'shouldRun' property was set to false on liquibase Liquibase Spring bean. 
+[2020-12-25 08:12:40.395] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping:]) Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)] 
+[2020-12-25 08:12:40.666] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:]) Initializing ExecutorService 'applicationTaskExecutor' 
+[2020-12-25 08:12:40.849] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping:]) Adding welcome page template: index 
+[2020-12-25 08:12:40.973] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper:]) Context refreshed 
+[2020-12-25 08:12:41.001] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper:]) Found 1 custom documentation plugin(s) 
+[2020-12-25 08:12:41.046] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([springfox.documentation.spring.web.scanners.ApiListingReferenceScanner:]) Scanning for api listing references 
+[2020-12-25 08:12:41.254] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.apache.coyote.http11.Http11NioProtocol:]) Starting ProtocolHandler ["http-nio-8083"] 
+[2020-12-25 08:12:41.308] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.springframework.boot.web.embedded.tomcat.TomcatWebServer:]) Tomcat started on port(s): 8083 (http) with context path '/simpleAdmin' 
+[2020-12-25 08:12:41.312] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.scaffold.simple.admin.SimpleAdminService:]) Started SimpleAdminService in 6.639 seconds (JVM running for 9.328) 
+[2020-12-25 08:12:47.447] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [http-nio-8083-exec-1]([org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/simpleAdmin]:]) Initializing Spring DispatcherServlet 'dispatcherServlet' 
+[2020-12-25 08:12:47.447] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [http-nio-8083-exec-1]([org.springframework.web.servlet.DispatcherServlet:]) Initializing Servlet 'dispatcherServlet' 
+[2020-12-25 08:12:47.479] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [http-nio-8083-exec-1]([org.springframework.web.servlet.DispatcherServlet:]) Completed initialization in 32 ms 
+[2020-12-25 08:21:43.007] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [Thread-10]([org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:]) Shutting down ExecutorService 'applicationTaskExecutor' 
+[2020-12-25 08:21:43.010] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [Thread-10]([com.alibaba.druid.pool.DruidDataSource:]) {dataSource-1} closing ... 
+[2020-12-25 08:21:43.034] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [Thread-10]([com.alibaba.druid.pool.DruidDataSource:]) {dataSource-1} closed 
+[2020-12-25 08:21:53.825] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.scaffold.simple.admin.SimpleAdminService:]) Starting SimpleAdminService on DESKTOP-1TO8S67 with PID 10712 (D:\github\simpleadmin\target\classes started by Administrator in D:\github\simpleadmin) 
+[2020-12-25 08:21:53.832] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([com.scaffold.simple.admin.SimpleAdminService:]) No active profile set, falling back to default profiles: default 
+[2020-12-25 08:22:01.329] [DESKTOP-1TO8S67 simpleAdmin] [WARN ] [main]([org.mybatis.spring.mapper.ClassPathMapperScanner:]) No MyBatis mapper was found in '[com.scaffold.simple.admin]' package. Please check your configuration. 
+[2020-12-25 08:22:01.474] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.springframework.context.annotation.ConfigurationClassPostProcessor:]) Cannot enhance @Configuration bean definition 'myAppTest1' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'. 
+[2020-12-25 08:22:01.799] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:]) Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2aaa8249] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+[2020-12-25 08:22:02.433] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.springframework.boot.web.embedded.tomcat.TomcatWebServer:]) Tomcat initialized with port(s): 8083 (http) 
+[2020-12-25 08:22:02.458] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.apache.coyote.http11.Http11NioProtocol:]) Initializing ProtocolHandler ["http-nio-8083"] 
+[2020-12-25 08:22:02.472] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.apache.catalina.core.StandardService:]) Starting service [Tomcat] 
+[2020-12-25 08:22:02.472] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.apache.catalina.core.StandardEngine:]) Starting Servlet engine: [Apache Tomcat/9.0.19] 
+[2020-12-25 08:22:02.845] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/simpleAdmin]:]) Initializing Spring embedded WebApplicationContext 
+[2020-12-25 08:22:02.846] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.springframework.web.context.ContextLoader:]) Root WebApplicationContext: initialization completed in 8922 ms 
+[2020-12-25 08:22:03.039] [DESKTOP-1TO8S67 simpleAdmin] [WARN ] [main]([org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:]) Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'projectApi': Unsatisfied dependency expressed through field 'projectManagerService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'projectManagerServiceImpl': Unsatisfied dependency expressed through field 'projectInfoPoMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'projectInfoPoMapper' defined in file [D:\github\simpleadmin\target\classes\com\scaffold\simple\admin\infrestraction\db\ProjectInfoPoMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties': Could not bind properties to 'MybatisProperties' : prefix=mybatis, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'mybatis.configuration' to org.apache.ibatis.session.Configuration 
+[2020-12-25 08:22:03.043] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.apache.catalina.core.StandardService:]) Stopping service [Tomcat] 
+[2020-12-25 08:22:03.111] [DESKTOP-1TO8S67 simpleAdmin] [INFO ] [main]([org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:]) 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+[2020-12-25 08:22:03.117] [DESKTOP-1TO8S67 simpleAdmin] [ERROR] [main]([org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:]) 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'mybatis.configuration' to org.apache.ibatis.session.Configuration:
+
+    Reason: No setter found for property: cache-names
+
+Action:
+
+Update your application's configuration
+ 

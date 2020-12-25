@@ -19,7 +19,7 @@ public class LiquibaseConfig {
     @Bean
     public SpringLiquibase liquibase(DataSource dataSource) throws Exception {
         SpringLiquibase liquibase = new SpringLiquibase();
-        liquibase.setShouldRun(true);
+        liquibase.setShouldRun(false);
         liquibase.setDataSource(dataSource);
         liquibase.setChangeLog("classpath:db/changelog-master.xml");
         liquibase.setContexts("development,test,production");

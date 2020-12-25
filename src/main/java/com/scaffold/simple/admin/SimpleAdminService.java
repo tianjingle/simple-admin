@@ -55,7 +55,7 @@ public class SimpleAdminService extends SpringBootServletInitializer implements 
     Plugin b;
     public static void main(String[] args) {
         AnnotationConfigServletWebServerApplicationContext tesst;
-        SpringApplicationBuilder springApplicationBuilder=new SpringApplicationBuilder().sources(SimpleAdminService.class).web(WebApplicationType.NONE);
+        SpringApplicationBuilder springApplicationBuilder=new SpringApplicationBuilder().sources(SimpleAdminService.class).web(WebApplicationType.SERVLET);
         springApplicationBuilder.run();
         System.out.println(System.getProperty("server.port"));
         MyApplicationEvent myApplicationEvent=new MyApplicationEvent("test","123","tjl");
@@ -68,6 +68,7 @@ public class SimpleAdminService extends SpringBootServletInitializer implements 
         System.out.println(environment.getProperty("tianjingle"));
         System.out.println("selector测试："+context.getBean(Myselect.class).toString());
         System.out.println("动态注入bean测试："+context.getBean(TianConfig.class).toString());
+//        System.exit(1);
     }
 
 

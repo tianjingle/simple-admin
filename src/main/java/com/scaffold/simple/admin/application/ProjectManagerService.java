@@ -23,4 +23,7 @@ public interface ProjectManagerService {
      * @return 结果
      */
     ResponseResult deleteMonitorProject(String projectId);
+
+
+    void test();
 }

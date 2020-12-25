@@ -1,5 +1,21 @@
-[2020-12-20 12:48:53.585] [DESKTOP-1TO8S67 simpleAdmin] [WARN ] [main]([org.mybatis.spring.mapper.ClassPathMapperScanner:]) No MyBatis mapper was found in '[com.scaffold.simple.admin]' package. Please check your configuration. 
-[2020-12-20 12:50:08.640] [DESKTOP-1TO8S67 simpleAdmin] [WARN ] [main]([org.mybatis.spring.mapper.ClassPathMapperScanner:]) No MyBatis mapper was found in '[com.scaffold.simple.admin]' package. Please check your configuration. 
-[2020-12-20 15:03:06.095] [DESKTOP-1TO8S67 simpleAdmin] [WARN ] [main]([org.mybatis.spring.mapper.ClassPathMapperScanner:]) No MyBatis mapper was found in '[com.scaffold.simple.admin]' package. Please check your configuration. 
-[2020-12-20 15:40:45.685] [DESKTOP-1TO8S67 simpleAdmin] [WARN ] [main]([org.mybatis.spring.mapper.ClassPathMapperScanner:]) No MyBatis mapper was found in '[com.scaffold.simple.admin]' package. Please check your configuration. 
-[2020-12-20 15:49:59.155] [DESKTOP-1TO8S67 simpleAdmin] [WARN ] [main]([org.mybatis.spring.mapper.ClassPathMapperScanner:]) No MyBatis mapper was found in '[com.scaffold.simple.admin]' package. Please check your configuration. 
+[2020-12-25 08:07:23.661] [DESKTOP-1TO8S67 simpleAdmin] [WARN ] [main]([org.mybatis.spring.mapper.ClassPathMapperScanner:]) No MyBatis mapper was found in '[com.scaffold.simple.admin]' package. Please check your configuration. 
+[2020-12-25 08:08:41.810] [DESKTOP-1TO8S67 simpleAdmin] [WARN ] [main]([org.mybatis.spring.mapper.ClassPathMapperScanner:]) No MyBatis mapper was found in '[com.scaffold.simple.admin]' package. Please check your configuration. 
+[2020-12-25 08:12:38.039] [DESKTOP-1TO8S67 simpleAdmin] [WARN ] [main]([org.mybatis.spring.mapper.ClassPathMapperScanner:]) No MyBatis mapper was found in '[com.scaffold.simple.admin]' package. Please check your configuration. 
+[2020-12-25 08:22:01.329] [DESKTOP-1TO8S67 simpleAdmin] [WARN ] [main]([org.mybatis.spring.mapper.ClassPathMapperScanner:]) No MyBatis mapper was found in '[com.scaffold.simple.admin]' package. Please check your configuration. 
+[2020-12-25 08:22:03.039] [DESKTOP-1TO8S67 simpleAdmin] [WARN ] [main]([org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:]) Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'projectApi': Unsatisfied dependency expressed through field 'projectManagerService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'projectManagerServiceImpl': Unsatisfied dependency expressed through field 'projectInfoPoMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'projectInfoPoMapper' defined in file [D:\github\simpleadmin\target\classes\com\scaffold\simple\admin\infrestraction\db\ProjectInfoPoMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties': Could not bind properties to 'MybatisProperties' : prefix=mybatis, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'mybatis.configuration' to org.apache.ibatis.session.Configuration 
+[2020-12-25 08:22:03.117] [DESKTOP-1TO8S67 simpleAdmin] [ERROR] [main]([org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:]) 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'mybatis.configuration' to org.apache.ibatis.session.Configuration:
+
+    Reason: No setter found for property: cache-names
+
+Action:
+
+Update your application's configuration
+ 
