@@ -25,7 +25,7 @@ public class DruidConfigDemo {
     public ServletRegistrationBean statViewServletDemo() {
         ServletRegistrationBean srb = new ServletRegistrationBean(new StatViewServlet(), "/tjl/druid/*");
         // 添加IP白名单
-        srb.addInitParameter("allow", "127.0.0.1");
+        srb.addInitParameter("allow", "192.168.21.119");
         // 添加IP黑名单，当白名单和黑名单重复时，黑名单优先级更高
         srb.addInitParameter("deny", "192.168.25.123");
         // 添加控制台管理用户
