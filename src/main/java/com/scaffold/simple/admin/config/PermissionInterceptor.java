@@ -2,6 +2,7 @@ package com.scaffold.simple.admin.config;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import org.springframework.web.servlet.DispatcherServlet;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -18,6 +19,7 @@ import javax.servlet.http.HttpServletResponse;
 public class PermissionInterceptor implements HandlerInterceptor {
 
 
+    DispatcherServlet dispatcherServlet;
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {

@@ -225,3 +225,5 @@ org.apache.zookeeper.KeeperException$NoNodeException: KeeperErrorCode = NoNode f
 [2021-02-02 10:27:21.681] [DESKTOP-1TO8S67 simpleAdmin] [WARN ] [main]([org.apache.curator.CuratorZookeeperClient:]) session timeout [10000] is less than connection timeout [15000] 
 [2021-02-02 10:29:56.540] [DESKTOP-1TO8S67 simpleAdmin] [WARN ] [main]([org.mybatis.spring.mapper.ClassPathMapperScanner:]) No MyBatis mapper was found in '[com.scaffold.simple.admin]' package. Please check your configuration. 
 [2021-02-02 10:29:58.373] [DESKTOP-1TO8S67 simpleAdmin] [WARN ] [main]([org.apache.curator.CuratorZookeeperClient:]) session timeout [10000] is less than connection timeout [15000] 
+[2021-02-02 13:07:34.738] [DESKTOP-1TO8S67 simpleAdmin] [WARN ] [main]([org.mybatis.spring.mapper.ClassPathMapperScanner:]) No MyBatis mapper was found in '[com.scaffold.simple.admin]' package. Please check your configuration. 
+[2021-02-02 13:07:37.714] [DESKTOP-1TO8S67 simpleAdmin] [WARN ] [main]([org.apache.curator.CuratorZookeeperClient:]) session timeout [10000] is less than connection timeout [15000] 
