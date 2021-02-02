@@ -191,6 +191,25 @@
             <version>3.6.2</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.ow2.asm/asm -->
+        <dependency>
+            <groupId>org.ow2.asm</groupId>
+            <artifactId>asm</artifactId>
+            <version>9.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.curator/curator-framework -->
+        <dependency>
+            <groupId>org.apache.curator</groupId>
+            <artifactId>curator-framework</artifactId>
+            <version>5.1.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.curator/curator-recipes -->
+        <dependency>
+            <groupId>org.apache.curator</groupId>
+            <artifactId>curator-recipes</artifactId>
+            <version>5.1.0</version>
+        </dependency>
+
     </dependencies>
 
     <build>
