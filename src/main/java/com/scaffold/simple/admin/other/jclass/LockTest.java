@@ -1,4 +1,4 @@
-package com.scaffold.simple.admin.lock;
+package com.scaffold.simple.admin.other.jclass;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.zookeeper.CreateMode;

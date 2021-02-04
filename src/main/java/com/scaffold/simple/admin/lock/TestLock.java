@@ -1,8 +1,9 @@
 package com.scaffold.simple.admin.lock;
 
+import com.scaffold.simple.admin.lock.annotation.DoubleSubmitAnnotation;
 import com.scaffold.simple.admin.lock.curator.ReSubmitLock;
+import com.scaffold.simple.admin.other.jclass.LockTest;
 import com.scaffold.simple.admin.utils.ResponseResult;
-import org.apache.zookeeper.KeeperException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -28,18 +29,24 @@ public class TestLock {
     private ReSubmitLock reSubmitLock;
 
 
+    /**
+     * 校验并生成下次凭证
+     * @return
+     */
+    @DoubleSubmitAnnotation(check = true,generate = true)
+    @GetMapping(value = "/test")
+    public ResponseResult test() {
+        return ResponseResult.success(123);
+    }
 
-    @GetMapping(value = "/{userId}/{token}")
-    public ResponseResult test(@PathVariable String userId,@PathVariable String token) throws KeeperException, InterruptedException {
-        boolean f=lockTest.check(userId,token);
-        if (f){
-            System.out.println("提交成功！");
-            return ResponseResult.success("ok");
-        }else{
-            System.out.println("重复提交表单");
-            lockTest.generate(userId);
-            return ResponseResult.success("false");
-        }
+    /**
+     * 生成新token
+     * @return
+     */
+    @DoubleSubmitAnnotation(generate = true)
+    @GetMapping(value = "/gen")
+    public ResponseResult test1() {
+        return ResponseResult.success(123);
     }
 
     /**

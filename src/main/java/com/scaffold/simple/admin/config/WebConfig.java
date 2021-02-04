@@ -2,6 +2,7 @@ package com.scaffold.simple.admin.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration;
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.util.AntPathMatcher;
@@ -19,6 +20,19 @@ public class WebConfig implements WebMvcConfigurer {
 
     @Autowired
     private PermissionInterceptor permissionInterceptor;
+
+    @Autowired
+    private MyFilter myFilter;
+
+    @Bean
+    public FilterRegistrationBean testFilterRegistration() {
+        FilterRegistrationBean registration = new FilterRegistrationBean();
+        registration.setFilter(myFilter);
+        registration.addUrlPatterns("/*");
+        registration.setName("myFilter");
+        return registration;
+    }
+
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {

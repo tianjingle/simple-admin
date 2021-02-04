@@ -23,4 +23,10 @@ public class Session {
      * 权限列表
      */
     private Map<String,Boolean> roleMap;
+
+
+    /**
+     * 防重复提交token
+     */
+    private String doubleSubmitToken;
 }

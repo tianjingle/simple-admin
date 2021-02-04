@@ -22,6 +22,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.EnvironmentAware;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.annotation.Import;
 import org.springframework.core.env.Environment;
 import tk.mybatis.mapper.session.Configuration;
@@ -33,6 +34,7 @@ import tk.mybatis.spring.mapper.MapperFactoryBean;
  * @Date: 2020/9/1 9:53
  * @Eamil: 2695062879@qq.com
  */
+@EnableAspectJAutoProxy
 @EnableMyselect
 @SpringBootApplication
 @Import(TianImportBeanDefinitionRegistrar.class)

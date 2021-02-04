@@ -1,4 +1,4 @@
-package com.scaffold.simple.admin.lock.curator;
+package com.scaffold.simple.admin.other.jclass;
 
 import com.scaffold.simple.admin.utils.ResponseResult;
 import org.apache.curator.framework.CuratorFramework;

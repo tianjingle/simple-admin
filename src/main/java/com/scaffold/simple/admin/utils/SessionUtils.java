@@ -51,4 +51,15 @@ public class SessionUtils {
     public static Map getRoleMap(){
         return userThreadLocal.get().getRoleMap();
     }
+
+
+    public static void setSubmitToken(String token){
+        Session session =userThreadLocal.get();
+        session.setDoubleSubmitToken(token);
+        userThreadLocal.set(session);
+    }
+
+    public static String getSubmitToken(){
+        return userThreadLocal.get().getDoubleSubmitToken();
+    }
 }

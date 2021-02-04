@@ -3,10 +3,13 @@ package com.scaffold.simple.admin.lock.curator;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.recipes.locks.InterProcessLock;
 import org.apache.curator.framework.recipes.locks.InterProcessReadWriteLock;
+import org.apache.zookeeper.CreateMode;
+import org.apache.zookeeper.ZooDefs;
 import org.apache.zookeeper.data.Stat;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.Objects;
 import java.util.UUID;
 
 /**
@@ -26,14 +29,14 @@ public class ReSubmitLock {
 
     /**
      * 放重复提交
-     * @param userId
+     * @param key
      * @param token
      * @return
      * @throws Exception
      */
-    public boolean check(String userId, String token) throws Exception {
+    public boolean check(String key, String token) throws Exception {
         boolean status = false;
-        String mainKey="/"+userId;
+        String mainKey="/"+key;
         InterProcessReadWriteLock interProcessReadWriteLock = new InterProcessReadWriteLock(client, mainKey);
         InterProcessLock interProcessLock = interProcessReadWriteLock.writeLock();
         System.out.println("等待获取锁对象!");
@@ -49,7 +52,7 @@ public class ReSubmitLock {
             System.out.println("允许的Token：" + oldToken);
             if (token.equals(oldToken)) {
                 System.out.println("校验成功！");
-                generateToken(userId);
+                generateToken(key);
                 status = true;
             }
         } catch (Exception e){
@@ -69,14 +72,21 @@ public class ReSubmitLock {
     /**
      * 创建token
      */
-    public String generateToken(String userId) throws Exception {
-        String mainKey="/"+userId;
+    public String generateToken(String key) throws Exception {
+        String mainKey="/"+key;
         String newToken = UUID.randomUUID().toString();
         System.out.println("设置的新token为：" + newToken);
-        client.setData()
-                .forPath(mainKey, newToken.getBytes());
+        // 判断节点是否存在,为null表示不存在
+        Stat stat= client.checkExists()
+                // 节点路径
+                .forPath(mainKey);
+        if (!Objects.isNull(stat)){
+            client.setData()
+                    .forPath(mainKey, newToken.getBytes());
+        }else{
+            client.create()
+                    .forPath(mainKey, newToken.getBytes());
+        }
         return newToken;
     }
-
-
 }

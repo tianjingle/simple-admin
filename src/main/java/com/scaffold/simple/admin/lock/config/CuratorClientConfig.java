@@ -1,4 +1,4 @@
-package com.scaffold.simple.admin.lock.curator;
+package com.scaffold.simple.admin.lock.config;
 
 import org.apache.curator.RetryPolicy;
 import org.apache.curator.framework.CuratorFramework;
@@ -16,7 +16,7 @@ import org.springframework.context.annotation.Configuration;
  * @Eamil: 2695062879@qq.com
  */
 @Configuration
-public class TestCurd {
+public class CuratorClientConfig {
 
 
     @Bean
@@ -33,7 +33,7 @@ public class TestCurd {
         //创建连接对象
         CuratorFramework client = CuratorFrameworkFactory.builder()
                 //IP地址端口号
-                .connectString("127.0.0.1:2181")
+                .connectString("127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183")
                 //客户端与服务器之间的会话超时时间
                 .sessionTimeoutMs(10000)
                 //当客户端与服务器之间会话超时3s后，进行一次重连
