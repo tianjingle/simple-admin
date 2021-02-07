@@ -38,7 +38,8 @@ public class ReSubmitLock {
         boolean status = false;
         String mainKey="/"+key;
         InterProcessReadWriteLock interProcessReadWriteLock = new InterProcessReadWriteLock(client, mainKey);
-        InterProcessLock interProcessLock = interProcessReadWriteLock.writeLock();
+//        InterProcessLock interProcessLock = interProcessReadWriteLock.writeLock();
+        InterProcessLock interProcessLock = interProcessReadWriteLock.readLock();
         System.out.println("等待获取锁对象!");
         // 获取锁
         try {

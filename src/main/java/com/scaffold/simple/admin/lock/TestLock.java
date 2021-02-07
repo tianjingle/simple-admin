@@ -4,6 +4,8 @@ import com.scaffold.simple.admin.lock.annotation.DoubleSubmitAnnotation;
 import com.scaffold.simple.admin.lock.curator.ReSubmitLock;
 import com.scaffold.simple.admin.other.jclass.LockTest;
 import com.scaffold.simple.admin.utils.ResponseResult;
+import org.apache.curator.framework.CuratorFramework;
+import org.apache.curator.framework.recipes.locks.InterProcessMutex;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -28,6 +30,11 @@ public class TestLock {
     @Autowired
     private ReSubmitLock reSubmitLock;
 
+    /**
+     * 进行一些操作
+     */
+    @Autowired
+    private CuratorFramework client;
 
     /**
      * 校验并生成下次凭证
@@ -49,6 +56,15 @@ public class TestLock {
         return ResponseResult.success(123);
     }
 
+
+    @GetMapping(value = "/tian")
+    public ResponseResult mylock() throws Exception {
+        InterProcessMutex mutex = new InterProcessMutex( client, "/mutex/resource" );
+        mutex.acquire();
+        System.out.println("执行代码");
+        mutex.release();
+        return ResponseResult.success(123);
+    }
     /**
      * 加锁
      * @param userId
