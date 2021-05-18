@@ -1,6 +1,7 @@
 package com.scaffold.simple.admin.application;
 
 import com.scaffold.simple.admin.api.request.project.ProjectAddRequest;
+import com.scaffold.simple.admin.application.dto.user.UserDto;
 import com.scaffold.simple.admin.utils.ResponseResult;
 
 /**
@@ -26,4 +27,6 @@ public interface ProjectManagerService {
 
 
     void test();
+
+    UserDto getUser();
 }

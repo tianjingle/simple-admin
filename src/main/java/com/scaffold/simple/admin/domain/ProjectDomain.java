@@ -7,7 +7,9 @@ import lombok.Data;
 import org.springframework.beans.BeanUtils;
 import tk.mybatis.mapper.entity.Example;
 
+import java.util.Collection;
 import java.util.Date;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * @Author: tianjl
@@ -74,6 +76,7 @@ public class ProjectDomain {
      */
     public ResponseResult insert(ProjectInfoPoMapper projectInfoPoMapper) {
         ProjectInfoPo po=new ProjectInfoPo();
+        AtomicInteger a;
         BeanUtils.copyProperties(this,po);
         po.setCreateTime(new Date());
         if (projectInfoPoMapper.insert(po)>0){

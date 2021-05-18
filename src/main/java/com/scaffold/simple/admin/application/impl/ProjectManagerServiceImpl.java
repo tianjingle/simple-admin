@@ -2,6 +2,7 @@ package com.scaffold.simple.admin.application.impl;
 
 import com.scaffold.simple.admin.api.request.project.ProjectAddRequest;
 import com.scaffold.simple.admin.application.ProjectManagerService;
+import com.scaffold.simple.admin.application.dto.user.UserDto;
 import com.scaffold.simple.admin.domain.ProjectDomain;
 import com.scaffold.simple.admin.infrestraction.db.ProjectInfoPoMapper;
 import com.scaffold.simple.admin.utils.ResponseResult;
@@ -55,5 +56,10 @@ public class ProjectManagerServiceImpl implements ProjectManagerService {
     public void test() {
         projectInfoPoMapper.selectByPrimaryKey("1");
         projectInfoPoMapper.selectByPrimaryKey("1");
+    }
+
+    @Override
+    public UserDto getUser() {
+        return null;
     }
 }

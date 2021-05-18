@@ -77,10 +77,10 @@ public class SimpleAdminService extends SpringBootServletInitializer implements 
 
 
 
-    @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-        return builder.sources(SimpleAdminService.class).web(WebApplicationType.REACTIVE);
-    }
+//    @Override
+//    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+//        return builder.sources(SimpleAdminService.class).web(WebApplicationType.REACTIVE);
+//    }
 
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
