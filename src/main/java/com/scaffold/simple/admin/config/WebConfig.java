@@ -30,6 +30,7 @@ public class WebConfig implements WebMvcConfigurer {
         registration.setFilter(myFilter);
         registration.addUrlPatterns("/*");
         registration.setName("myFilter");
+        registration.setOrder(0);
         return registration;
     }
 

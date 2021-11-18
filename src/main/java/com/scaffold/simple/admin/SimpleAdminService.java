@@ -57,7 +57,7 @@ public class SimpleAdminService extends SpringBootServletInitializer implements 
     Plugin b;
     public static void main(String[] args) {
         AnnotationConfigServletWebServerApplicationContext tesst;
-        SpringApplicationBuilder springApplicationBuilder=new SpringApplicationBuilder().sources(SimpleAdminService.class).web(WebApplicationType.SERVLET);
+        SpringApplicationBuilder springApplicationBuilder=new SpringApplicationBuilder().sources(SimpleAdminService.class).web(WebApplicationType.SERVLET).initializers();
         springApplicationBuilder.run();
         System.out.println(System.getProperty("server.port"));
         MyApplicationEvent myApplicationEvent=new MyApplicationEvent("test","123","tjl");
